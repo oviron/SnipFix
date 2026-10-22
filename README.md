@@ -4,6 +4,12 @@ Exact colours in Windows screenshots with HDR on. Works with the built-in Snippi
 Tool (Win+Shift+S, PrtScn, its New button) and with Win+PrtScn / Alt+PrtScn.
 11 KB, no installer, no C runtime, idles at zero CPU.
 
+## Install
+
+Download `SnipFix.exe` from [Releases](../../releases/latest), put it anywhere and run
+it. A tray icon appears; right-click it for **Start with Windows** and **Exit**.
+Keep Snipping Tool's "HDR screenshot color corrector" off. Windows 10 1607+ / 11.
+
 ## The problem
 
 With HDR on, Windows shows SDR apps at the "SDR content brightness" level (say 240
