@@ -40,7 +40,7 @@ jobs:
       - name: Install llvm-mingw ${{ env.LLVM_MINGW }}
         run: |
           url=$(curl -fsSL "https://api.github.com/repos/mstorsjo/llvm-mingw/releases/tags/$LLVM_MINGW" |
-                jq -r '.assets[].browser_download_url | select(test("ucrt-ubuntu-[0-9.]+-x86_64\.tar\.xz$"))' | head -1)
+                jq -r '.assets[].browser_download_url | select(test("ucrt-ubuntu-[0-9.]+-x86_64\\.tar\\.xz$"))' | head -1)
           test -n "$url"
           curl -fsSL "$url" | tar xJ
           echo "$PWD/$(ls -d llvm-mingw-*/ | head -1)bin" >> "$GITHUB_PATH"
